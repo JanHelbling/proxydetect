@@ -19,6 +19,7 @@ proxydetect
 It checks the HTTP header (eg. $_SERVER["HTTP_X_FORWARDED_FOR"],$_SERVER["HTTP_VIA"]) to traces of proxys,
 scans short 4 ports, to check whether it is a server
 and compares a list of default proxy ports with $_SERVER["REMOTE_PORT"].
+You can TEST this function at http://www.jan-helbling.ch/proxydetect.php
 
 functions:
 	bool check_if_proxy()
