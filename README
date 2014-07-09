@@ -22,6 +22,6 @@ and compares a list of default proxy ports with $_SERVER["REMOTE_PORT"].
 You can TEST this function at http://www.jan-helbling.ch/proxydetect.php
 
 functions:
-	bool check_if_proxy()
-		-- returns true if the visitor is using a proxy.
+	check_if_proxy()
+		-- returns the reason (String), which is detected why the visitor is using a proxy.
 		-- returns false if the visitor isn't using a proxy.

@@ -72,19 +72,19 @@
 		
 		foreach($proxy_headers as $header){
 			if(isset($_SERVER[$header])){
-				return true;
+				return "Header: ".$_SERVER[$header];
 			}
 		}
 		
 		foreach($scan_ports as $port){
 			if(@fsockopen($_SERVER['REMOTE_ADDR'], $port, $errstr, $errno, 1)){
-				return true;
+				return "Open scanned Port from ".$_SERVER['REMOTE_ADDR'].": $port";
 			}
 		}
 		
 		foreach($ports as $port){
 			 if($_SERVER["REMOTE_PORT"] == $port){
-				return true;
+				return "RemotePort is $port";
 			}
 		}
 		return false;
