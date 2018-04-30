@@ -25,3 +25,5 @@ functions:
 	check_if_proxy()
 		-- returns the reason (String), which is detected why the visitor is using a proxy.
 		-- returns false if the visitor isn't using a proxy.
+
+DONATE BITCOIN: 1JWj484iRqjnKaixQrJC7WPqk616WgdsaE
